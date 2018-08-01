@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const usernameInput = document.getElementById('username-input')
   const loginForm = document.getElementById('login-form')
 
+
 ////////////////////
 
   loginForm.addEventListener('submit', (event) => {
@@ -19,12 +20,33 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   })
 
+  const basket = document.getElementById('medkit1')
+  document.addEventListener('keydown', (event) => {
+
+    // if keypress left
+    if (event.keyCode == '37') {
+      if ( basket.style.left !== "90px" ) {
+        basket.style.left = parseInt(basket.style.left) - 5 + "px"
+      }
+
+    }
+    // if keypress right
+    if (event.keyCode == '39') {
+      if ( basket.style.left !== "845px" ) {
+        basket.style.left = parseInt(basket.style.left) + 5 + "px"
+      }
+
+    }
+  })
+
   /////////////////
 
+  // myMove()
 
-  // createScore({"user_id": 1, "point_total": 540})
 
-console.log("hi")
+
+
+  // myMove()
 
 
 });
