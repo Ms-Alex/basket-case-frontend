@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   // createScore({"user_id": 1, "point_total": 540})
 
-
+console.log("hi")
 
 
 });
