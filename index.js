@@ -1,22 +1,31 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Basket Case</title>
+document.addEventListener('DOMContentLoaded', (event) => {
 
-    <script src="src/adapter.js" charset="utf-8"></script>
+  usersIndex()
+  scoresIndex()
 
-    <script src="src/user.js" charset="utf-8"></script>
-    <script src="src/index.js" charset="utf-8"></script>
+  const usernameInput = document.getElementById('username-input')
+  const loginForm = document.getElementById('login-form')
 
-  </head>
-  <body>
+////////////////////
 
-    <h1>Welcome to Basket Case</h1>
-    <form id="login-form">
-      <input type="text" id="username-input" placeholder="username"> <br>
-      <input type="submit" id="username-submit" value="Login">
-    </form>
+  loginForm.addEventListener('submit', (event) => {
+    event.preventDefault()
 
-  </body>
-</html>
+    const postBody = {
+      username: usernameInput.value
+    }
+
+    loginUser(postBody).then(data => new User(data))
+
+  })
+
+  /////////////////
+
+
+  // createScore({"user_id": 1, "point_total": 540})
+
+
+
+
+});
+
