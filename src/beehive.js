@@ -72,19 +72,16 @@ function touchedBasket(elem, id) {
 
       if (healthClass.length === 0) {
         endGame()
-
         let user = storeUsers[0]
-
 
         createScore({
           point_total: user.score,
           user_id: user.id
         }).then(scoresIndex).then(leaderBoardHTML)
 
-
         const endGameHTML = `
               <div style="left: 250px; top: 150px; position: absolute; text-align: center;" width="500" height="600">
-              <h1 style="color: white;">Game Over!<h1> <h2 style="color: white;">Final Score: ${user.score}</h2> <br><br> <img src="https://png2.kisspng.com/sh/28a67e0f05cc975b39dde26273bc2e0a/L0KzQYi4UsA5N5VpSZGAYULkdbeAVvRiPpVrUZC5M0S4RIi7VME2OWM8TqU7NUS7SYWATwBvbz==/5a2aef76da6df9.0345474415127632548947.png" height="350px" width="500px">
+              <h1 style="color: white;">Game Over!<h1> <h2 style="color: white;">Final Score: ${user.score}</h2> <br><br> <img src="assets/buzz3.png" height="350px" width="500px">
               </div>`
         document.getElementById('game-board').innerHTML = endGameHTML
       }
@@ -92,3 +89,7 @@ function touchedBasket(elem, id) {
 
   }
 }
+
+
+// https://png2.kisspng.com/sh/28a67e0f05cc975b39dde26273bc2e0a/L0KzQYi4UsA5N5VpSZGAYULkdbeAVvRiPpVrUZC5M0S4RIi7VME2OWM8TqU7NUS7SYWATwBvbz==/5a2aef76da6df9.0345474415127632548947.png
+// http://www.eversweetapiaries.com/images1/stock%20photos/buzz3.png

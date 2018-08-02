@@ -63,6 +63,13 @@ function appleTouchedBasket(elem, id) {
       user.score += 10
       setScore(user)
 
+      // let user = storeUsers[0]
+
+      if (user.score >= 200) {
+        clearInterval(beeInterval)
+        beeInterval = setInterval(beeMove, 750)
+      }
+
     }
   }
 }
