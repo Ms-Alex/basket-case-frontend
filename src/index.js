@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     setInterval(beeMove, 2000);
     setInterval(appleMove, 2300);
 
-
   })
 
   const basket = document.getElementById('basket')

@@ -17,28 +17,35 @@
     let myCounter = counterB
     let originalElement = document.getElementById(`beehive_${myCounter}`);
 
+
     // x position will equal this
-    let pos = 160;
+    let pos = 175;
     let id = setInterval(frame, 5);
     function frame() {
       let elem = document.getElementById(`beehive_${myCounter}`);
       //console.log(elem===originalElement)
-      touchedBasket?(elem)
+      // setInterval(touchedBasket(elem), 100)
+      touchedBasket(elem)
+
       if (pos == 680) {
         clearInterval(id);
         elem.remove()
       } else {
         pos++;
         elem.style.top = pos + 'px';
+
       }
     }
   };
 
-  const basket = document.getElementById('basket')
+
   const healthClass = document.getElementsByClassName('health')
 
-  function touchedBasket?(elem){
-    if ( (parseInt(basket.style.left) - 40 <= praseInt(elem.style.left) <= praseInt(basket.style.left) + 40) && (610 <= praseInt(elem.style.top) <= 630) {
-      healthClass[-1].remove()
+  function touchedBasket(elem){
+    const basket = document.getElementById('basket')
+
+    if ( ( (parseInt(basket.style.left) - 40) <= parseInt(elem.style.left) <= (parseInt(basket.style.left) + 40) ) && (610 <= parseInt(elem.style.top) <= 630) ) {
+
+      healthClass[healthClass.length - 1].remove()
     }
   }
