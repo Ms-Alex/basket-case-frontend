@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   const usernameInput = document.getElementById('username-input')
   const loginForm = document.getElementById('login-form')
-  const scoreContainer = document.getElementById('score-container')
+  // const loginContainer = document.getElementById('login-container')
+  let scoreContainer = document.getElementById('score-container')
 
 
 
@@ -23,8 +24,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     loginForm.remove()
 
     setInitialLives()
-    setInterval(beeMove, 2000);
-    setInterval(appleMove, 2300);
+
+    startGame()
 
   })
 
@@ -49,9 +50,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   /////////////////
 
-
-  // setInterval(myMove, 2000);
-
   function setInitialLives(){
     const heartsContainer = document.getElementById('hearts-container')
 
@@ -75,7 +73,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let scoreText = `<h3>Score: ${userObj.score}</h3>`
     scoreContainer.innerHTML = scoreText
   }
-
 
 
 });

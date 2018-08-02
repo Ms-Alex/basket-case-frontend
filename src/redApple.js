@@ -1,4 +1,5 @@
 let counterA = 0
+// const startApples = setInterval(appleMove, 2000)
 
 
 function createApple(){
@@ -20,15 +21,52 @@ function appleMove() {
   let pos = 160;
   let id = setInterval(frame, 5);
   function frame() {
-    let elem = document.getElementById(`apple_${myCounter}`);
+    let elemA = document.getElementById(`apple_${myCounter}`);
     //console.log(elem===originalElement)
+
+    appleTouchedBasket(elemA, id)
+
     if (pos == 680) {
       clearInterval(id);
-      elem.remove()
+      elemA.remove()
     } else {
       pos++;
-      elem.style.top = pos + 'px';
+      elemA.style.top = pos + 'px';
 
     }
   }
 };
+
+
+
+function setScore(userObj) {
+  let scoreContainer = document.getElementById('score-container')
+
+  let scoreText = `<h3>Score: ${userObj.score}</h3>`
+  scoreContainer.innerHTML = scoreText
+}
+
+function appleTouchedBasket(elem, id){
+  const basket = document.getElementById('basket')
+  let user = storeUsers[0]
+
+  if ( 590 <= parseInt(elem.style.top) &&
+        parseInt(elem.style.top) <= 630 &&
+        (parseInt(basket.style.left) - 30) <= parseInt(elem.style.left) &&
+        parseInt(elem.style.left) <= (parseInt(basket.style.left) + 80) ) {
+    elem.remove()
+    clearInterval(id)
+    user.score += 10
+    setScore(user)
+
+    if (healthClass.length === 0) {
+
+      // createScore({point_total: user.score, user_id: user.id}).then(console.log)
+      // debugger;
+      // .then(scoresIndex).then(leaderBoardHTML)
+      // scoresIndex().then(leaderBoardHTML)
+
+    }
+
+  }
+}

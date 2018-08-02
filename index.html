@@ -5,10 +5,15 @@
     <title>Basket Case</title>
 
     <script src="src/adapter.js" charset="utf-8"></script>
-    <script src="src/beehive.js" charset="utf-8"></script>
-    <script src="src/redApple.js" charset="utf-8"></script>
-    <script src="src/leaderboard.js" charset="utf-8"></script>
     <script src="src/user.js" charset="utf-8"></script>
+    <!-- <script src="src/gameStart.js" charset="utf-8"></script> -->
+    <!-- <script src="src/gameEnd.js" charset="utf-8"></script> -->
+
+    <script src="src/redApple.js" charset="utf-8"></script>
+    <script src="src/beehive.js" charset="utf-8"></script>
+
+    <script src="src/leaderboard.js" charset="utf-8"></script>
+
     <script src="src/index.js" charset="utf-8"></script>
 
     <style>
@@ -22,34 +27,39 @@
 
     <h1 align="center">Welcome to Basket Case</h1>
 
+    <div class="">
 
-    <div id="form-container" align="center">
+    </div>
+    <div id="login-container" align="center">
       <form id="login-form">
         <input type="text" id="username-input" placeholder="username"> <br><br>
         <input type="submit" id="username-submit" value="Login">
       </form>
-
     </div>
 
     <div id="background" style="left: 100px; top: 150px; position: absolute"> <img src="https://cdn.dribbble.com/users/375867/screenshots/1491895/forest-jungle-game-background-game-assets-sprite-sheet-sidescroller-sidescrolling-game.png"> </div>
 
+    <!-- GAME BOARD -->
 
-    <div id="container">
+    <div id="game-board">
+
+      <div id="container">
+
+      </div>
+
+      <div id="hearts-container">
+
+      </div>
+
+      <div id="score-container" style="left: 780px; top: 175px; position: absolute; color:white;">
+
+      </div>
+
+      <div id="basket" style="left: 460px; top: 630px; position: absolute"> <img src="https://clipartion.com/wp-content/uploads/2015/11/picture-of-picnic-basket.png" width="100px" height="75px"> </div>
 
     </div>
+    <!-- GAME BOARD END -->
 
-
-    <div id="hearts-container">
-
-    </div>
-
-
-    <div id="score-container" style="left: 780px; top: 175px; position: absolute; color:white;">
-
-    </div>
-
-
-    <div id="basket" style="left: 460px; top: 630px; position: absolute"> <img src="https://clipartion.com/wp-content/uploads/2015/11/picture-of-picnic-basket.png" width="100px" height="75px"> </div>
 
     <div id="leaderboard" style="left: 920px; top: 130px; position: absolute; text-align: center;">
 
