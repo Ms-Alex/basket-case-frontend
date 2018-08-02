@@ -17,7 +17,6 @@
     let myCounter = counterB
     let originalElement = document.getElementById(`beehive_${myCounter}`);
 
-
     // x position will equal this
     let pos = 175;
     let id = setInterval(frame, 5);
@@ -44,8 +43,15 @@
   function touchedBasket(elem){
     const basket = document.getElementById('basket')
 
-    if ( ( (parseInt(basket.style.left) - 40) <= parseInt(elem.style.left) <= (parseInt(basket.style.left) + 40) ) && (610 <= parseInt(elem.style.top) <= 630) ) {
 
+    if ( 610 <= parseInt(elem.style.top) &&
+          parseInt(elem.style.top) <= 670 &&
+          (parseInt(basket.style.left) - 40) <= parseInt(elem.style.left) &&
+          parseInt(elem.style.left) <= (parseInt(basket.style.left) + 40) ) {
+      elem.remove()
       healthClass[healthClass.length - 1].remove()
     }
   }
+
+// ( (parseInt(basket.style.left) - 40) <= parseInt(elem.style.left) <= (parseInt(basket.style.left) + 40) )
+// && (610 <= parseInt(elem.style.top) <= 630)
