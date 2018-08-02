@@ -1,29 +1,20 @@
-// document.addEventListener('DOMContentLoaded',function(event) {
 
-
-  let counter = 0
+  let counterB = 0
 
 
   function createBeehive(){
-    counter++
+    counterB++
     let randomNumber = Math.floor(Math.random() * 700) + 100;
-    let beehiveId = counter
+    let beehiveId = counterB
     const gameContainer = document.getElementById('container')
-    // const body = document.getElementsByTagName('body')[0]
 
-
-    const beehiveHTML = `<div id="beehive_${counter}" style="left: ${randomNumber}px; top: 175px; position: absolute"> <img src="https://png.icons8.com/cotton/2x/hornet-hive.png" width="80px" height="80px"> </div>`
+    const beehiveHTML = `<div id="beehive_${counterB}" style="left: ${randomNumber}px; top: 175px; position: absolute"> <img src="https://png.icons8.com/cotton/2x/hornet-hive.png" width="80px" height="80px"> </div>`
     gameContainer.innerHTML += beehiveHTML
-    // body.innerHTML += beehiveHTML
+  };
 
-  }
-
-
-  // setInterval(myMove, 2000);
-
-  function myMove() {
+  function beeMove() {
     createBeehive()
-    let myCounter = counter
+    let myCounter = counterB
     let originalElement = document.getElementById(`beehive_${myCounter}`);
 
     // x position will equal this
@@ -32,22 +23,22 @@
     function frame() {
       let elem = document.getElementById(`beehive_${myCounter}`);
       //console.log(elem===originalElement)
+      touchedBasket?(elem)
       if (pos == 680) {
         clearInterval(id);
         elem.remove()
       } else {
         pos++;
         elem.style.top = pos + 'px';
-
       }
     }
+  };
+
+  const basket = document.getElementById('basket')
+  const healthClass = document.getElementsByClassName('health')
+
+  function touchedBasket?(elem){
+    if ( (parseInt(basket.style.left) - 40 <= praseInt(elem.style.left) <= praseInt(basket.style.left) + 40) && (610 <= praseInt(elem.style.top) <= 630) {
+      healthClass[-1].remove()
+    }
   }
-
-
-  // function touchesBasket?(elem){
-  //   if (elem.style.left === basket.style.left && ) {
-  //
-  //   }
-  // }
-
-// })

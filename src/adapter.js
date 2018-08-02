@@ -26,7 +26,7 @@ function loginUser(body){
 
 // SCORE FETCHES
 function scoresIndex(){
-  return fetch(scoresApiUrl).then(resp => resp.json()).then(console.log)
+  return fetch(scoresApiUrl).then(resp => resp.json())
 }
 
 function createScore(body){
@@ -37,5 +37,5 @@ function createScore(body){
     },
     body: JSON.stringify(body)
   }
-  return fetch(scoresApiUrl, postConfig).then(resp => resp.json()).then(console.log)
+  return fetch(scoresApiUrl, postConfig).then(resp => resp.json())
 }

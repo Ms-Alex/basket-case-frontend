@@ -6,18 +6,26 @@
 
     <script src="src/adapter.js" charset="utf-8"></script>
     <script src="src/beehive.js" charset="utf-8"></script>
+    <script src="src/redApple.js" charset="utf-8"></script>
+    <script src="src/leaderboard.js" charset="utf-8"></script>
     <script src="src/user.js" charset="utf-8"></script>
     <script src="src/index.js" charset="utf-8"></script>
+
+    <style>
+      table, th, td {
+          border: 1px solid black;
+      }
+    </style>
 
   </head>
   <body>
 
-    <h1>Welcome to Basket Case</h1>
+    <h1 align="center">Welcome to Basket Case</h1>
 
 
-    <div id="form-container">
+    <div id="form-container" align="center">
       <form id="login-form">
-        <input type="text" id="username-input" placeholder="username"> <br>
+        <input type="text" id="username-input" placeholder="username"> <br><br>
         <input type="submit" id="username-submit" value="Login">
       </form>
 
@@ -36,13 +44,16 @@
     </div>
 
 
-    <div id="score-container" style="left: 175px; top: 630px; position: absolute">
+    <div id="score-container" style="left: 780px; top: 175px; position: absolute; color:white;">
 
     </div>
 
 
     <div id="basket" style="left: 460px; top: 630px; position: absolute"> <img src="https://clipartion.com/wp-content/uploads/2015/11/picture-of-picnic-basket.png" width="100px" height="75px"> </div>
 
+    <div id="leaderboard" style="left: 920px; top: 130px; position: absolute; text-align: center;">
+
+    </div>
 
 
   </body>
