@@ -3,11 +3,11 @@ const scoresApiUrl = 'http://localhost:3000/api/v1/scores'
 
 
 // USER FETCHES
-function usersIndex(){
+function usersIndex() {
   return fetch(usersApiUrl).then(resp => resp.json())
 }
 
-function loginUser(body){
+function loginUser(body) {
   const postConfig = {
     method: 'POST',
     headers: {
@@ -15,7 +15,7 @@ function loginUser(body){
     },
     body: JSON.stringify(body)
   }
-  return fetch(usersApiUrl, postConfig).then(resp => resp.json()).then( data => {
+  return fetch(usersApiUrl, postConfig).then(resp => resp.json()).then(data => {
     if (data.errors) {
       alert(data.errors)
     } else {
@@ -25,11 +25,11 @@ function loginUser(body){
 }
 
 // SCORE FETCHES
-function scoresIndex(){
+function scoresIndex() {
   return fetch(scoresApiUrl).then(resp => resp.json())
 }
 
-function createScore(body){
+function createScore(body) {
   const postConfig = {
     method: 'POST',
     headers: {

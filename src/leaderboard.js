@@ -1,11 +1,8 @@
-
-
-
-function leaderBoardHTML(scoreObjs){
+function leaderBoardHTML(scoreObjs) {
 
   const leaderContainer = document.getElementById('leaderboard')
 
-  const sortedTopTen = scoreObjs.sort((a, b) => b.point_total - a.point_total).splice(0,10)
+  const sortedTopTen = scoreObjs.sort((a, b) => b.point_total - a.point_total).splice(0, 10)
 
   const leaderboardHTML = sortedTopTen.map(scoreObj => {
     return `

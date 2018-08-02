@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
-////////////////////
+  ////////////////////
 
   loginForm.addEventListener('submit', (event) => {
     event.preventDefault()
@@ -35,14 +35,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     // if keypress left
     if (event.keyCode == '37') {
-      if ( basket.style.left !== "100px" ) {
+      if (basket.style.left !== "100px") {
         basket.style.left = parseInt(basket.style.left) - 5 + "px"
       }
 
     }
     // if keypress right
     if (event.keyCode == '39') {
-      if ( basket.style.left !== "800px" ) {
+      if (basket.style.left !== "800px") {
         basket.style.left = parseInt(basket.style.left) + 5 + "px"
       }
 
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   /////////////////
 
-  function setInitialLives(){
+  function setInitialLives() {
     const heartsContainer = document.getElementById('hearts-container')
 
     let first_heart = `
