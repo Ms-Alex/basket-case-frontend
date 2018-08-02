@@ -1,5 +1,4 @@
 let counterA = 0
-// const startApples = setInterval(appleMove, 2000)
 
 
 function createApple(){
@@ -8,8 +7,10 @@ function createApple(){
   let appleId = counterA
   const gameContainer = document.getElementById('container')
 
+  if (gameContainer !== null) {
   const appleHTML = `<div id="apple_${counterA}" style="left: ${randomNumber}px; top: 175px; position: absolute"> <img src="https://s3.amazonaws.com/jordan1/images/uploads/098b2c9f-4b27-4f9e-9305-317e2ca05c5b.png" width="40px" height="50px"> </div>`
   gameContainer.innerHTML += appleHTML
+}
 };
 
 function appleMove() {
@@ -23,7 +24,7 @@ function appleMove() {
   function frame() {
     let elemA = document.getElementById(`apple_${myCounter}`);
     //console.log(elem===originalElement)
-
+    if (elemA !== null) {
     appleTouchedBasket(elemA, id)
 
     if (pos == 680) {
@@ -34,6 +35,7 @@ function appleMove() {
       elemA.style.top = pos + 'px';
 
     }
+  }
   }
 };
 
@@ -47,6 +49,9 @@ function setScore(userObj) {
 }
 
 function appleTouchedBasket(elem, id){
+
+  if (elem !== null) {
+
   const basket = document.getElementById('basket')
   let user = storeUsers[0]
 
@@ -59,14 +64,6 @@ function appleTouchedBasket(elem, id){
     user.score += 10
     setScore(user)
 
-    if (healthClass.length === 0) {
-
-      // createScore({point_total: user.score, user_id: user.id}).then(console.log)
-      // debugger;
-      // .then(scoresIndex).then(leaderBoardHTML)
-      // scoresIndex().then(leaderBoardHTML)
-
-    }
-
   }
+}
 }

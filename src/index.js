@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   const usernameInput = document.getElementById('username-input')
   const loginForm = document.getElementById('login-form')
-  // const loginContainer = document.getElementById('login-container')
+  const directions = document.getElementById('game-directions')
   let scoreContainer = document.getElementById('score-container')
 
 
@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     loginUser(postBody).then(data => new User(data)).then(setScore)
 
     loginForm.remove()
+    directions.remove()
 
     setInitialLives()
 
