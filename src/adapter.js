@@ -18,6 +18,7 @@ function loginUser(body) {
   return fetch(usersApiUrl, postConfig).then(resp => resp.json()).then(data => {
     if (data.errors) {
       alert(data.errors)
+      window.location.reload()
     } else {
       return data
     }
