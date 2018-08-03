@@ -28,9 +28,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     startGame()
 
-  })
+  });
+
 
   const basket = document.getElementById('basket')
+
   document.addEventListener('keydown', (event) => {
 
     // if keypress left
@@ -47,7 +49,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
       }
 
     }
-  })
+  });
+
+
 
   /////////////////
 

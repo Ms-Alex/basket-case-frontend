@@ -81,13 +81,23 @@ function touchedBasket(elem, id) {
 
         const endGameHTML = `
               <div style="left: 250px; top: 150px; position: absolute; text-align: center;" width="500" height="600">
-              <h1 style="color: white;">Game Over!<h1> <h2 style="color: white;">Final Score: ${user.score}</h2> <br><br> <img src="assets/buzz3.png" height="350px" width="500px">
+              <h1 style="color: white;">Game Over!<h1> <h2 style="color: white;">Final Score: ${user.score}</h2> <button id="play-again" onclick="playAgain()" data-action="play-again">Play Again!</button><br> <img src="assets/buzz3.png" height="350px" width="500px">
               </div>`
         document.getElementById('game-board').innerHTML = endGameHTML
       }
     }
 
   }
+};
+
+function playAgain(){
+  const gameBoard = document.getElementById('game-board')
+
+  gameBoard.addEventListener('click', (event) => {
+    if (event.target.dataset.action === "play-again") {
+    window.location.reload()
+    }
+  });
 }
 
 
