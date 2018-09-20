@@ -24,9 +24,11 @@ bundle install
 ## Usage example
 
 Before playing, you must enter a username:
+
 ![basket case demo 1](https://media.giphy.com/media/25OBHoAMQNkJLjcKjw/giphy.gif)
 
 Then, play to your heart's content until you reach the leaderboard.
+
 ![basket case demo 2](https://media.giphy.com/media/cJz04ccqHzOdrftvI9/giphy.gif)
 
 
