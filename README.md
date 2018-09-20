@@ -34,8 +34,6 @@ Then, play to your heart's content until you reach the leaderboard.
 
 ## Development setup
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
-
 front end:
 ```sh
 open index.html
