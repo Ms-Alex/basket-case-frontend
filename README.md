@@ -7,6 +7,10 @@ Ruby on Rails API back end repo available here: https://github.com/newmanbradm/b
 
 ![Basket Case still video](https://media.giphy.com/media/ero9mTlPmiByTxodsQ/giphy.gif)
 
+<p align="center">
+  <img src="https://media.giphy.com/media/ero9mTlPmiByTxodsQ/giphy.gif">
+</p>
+
 ## Installation
 
 OS X & Linux:
@@ -27,9 +31,17 @@ Before playing, you must enter a username:
 
 ![basket case demo 1](https://media.giphy.com/media/25OBHoAMQNkJLjcKjw/giphy.gif)
 
+<p align="center">
+  <img src="https://media.giphy.com/media/25OBHoAMQNkJLjcKjw/giphy.gif">
+</p>
+
 Then, play to your heart's content until you reach the leaderboard.
 
 ![basket case demo 2](https://media.giphy.com/media/cJz04ccqHzOdrftvI9/giphy.gif)
+
+<p align="center">
+  <img src="https://media.giphy.com/media/cJz04ccqHzOdrftvI9/giphy.gif">
+</p>
 
 
 ## Development setup
