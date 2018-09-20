@@ -55,6 +55,7 @@ rails s
 ## Meta
 
 Brad Newman - newmanbradm@gmail.com
+
 Alexandra Hernandez – ms.hernandeza1@gmail.com
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
