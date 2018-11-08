@@ -16,10 +16,10 @@ function leaderBoardHTML(scoreObjs) {
                       <h2>Leaderboard</h2>
                         <table>
                           <tr>
-                            <th>Username</th>
-                            <th>Score</th>
+                            <th>&emsp;Username&emsp;</th>
+                            <th>&emsp;Score&emsp;</th>
                           </tr>
                           ${leaderboardHTML}
                         </table>
-                        `
+                        `;
 }
