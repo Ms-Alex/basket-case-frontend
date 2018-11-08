@@ -1,5 +1,6 @@
 body {
   background: #f2f27d;
+  font-family: 'Modern Antiqua', cursive;
 }
 
 table,
@@ -21,9 +22,6 @@ button {
   border-radius: 12px;
 }
 
-body {
-  font-family: 'Modern Antiqua', cursive;
-}
 
 input[type=text],
 select {
@@ -49,4 +47,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+#login-form {
+  font-size: 16px;
 }
