@@ -9,8 +9,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const directions = document.getElementById('game-directions')
   let scoreContainer = document.getElementById('score-container')
 
-
-
   ////////////////////
 
   loginForm.addEventListener('submit', (event) => {
