@@ -13,6 +13,12 @@ td {
   border: 2px solid black;
 }
 
+#play-again {
+  border-color: #555555;
+  padding: 15px 32px;
+  font-size: 18px;
+}
+
 
 input[type=text],
 select {
@@ -26,54 +32,7 @@ select {
 }
 
 
-#play-again {
-  border-color: #555555;
-  padding: 15px 32px;
-  font-size: 18px;
-}
-
-
 #login-text {
   font-size: 16px;
 }
 
-.health {
-  top: 175px;
-  position: absolute;
-}
-
-#background {
-  left: 100px; 
-  top: 150px; 
-  position: absolute; 
-  border: 3px solid black;
-}
-
-#game-directions {
-  color: white; 
-  left: 145px; 
-  top: 155px; 
-  position: absolute; 
-  text-align:center;
-}
-
-#score-container {
-  left: 760px; 
-  top: 175px; 
-  position: absolute; 
-  color:white; 
-  font-size: 20px
-}
-
-#basket {
-  left: 460px; 
-  top: 630px; 
-  position: absolute
-}
-
-#leaderboard {
-  left: 950px; 
-  top: 150px; 
-  position: absolute; 
-  text-align: center;
-}
