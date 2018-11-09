@@ -57,16 +57,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const heartsContainer = document.getElementById('hearts-container')
 
     let first_heart = `
-      <div class="health" id="heart_1" style="left: 115px; top: 175px; position: absolute"> <img src="https://vignette.wikia.nocookie.net/unturned-bunker/images/0/0f/Medkit.png/revision/latest?cb=20160523170332" width="75px" height="50px"> </div>
+      <div class="health" id="heart_1" style="left: 115px;"> <img src="./assets/Medkit.png" width="75px" height="50px"> </div>
     `
 
     let sec_heart = `
-      <div class="health" id="heart_2" style="left: 195px; top: 175px; position: absolute"> <img src="https://vignette.wikia.nocookie.net/unturned-bunker/images/0/0f/Medkit.png/revision/latest?cb=20160523170332" width="75px" height="50px"> </div>
-    `
+      <div class="health" id="heart_2" style="left: 195px;"> <img src="./assets/Medkit.png" width="75px" height="50px"> </div>
+    `;
 
     let third_heart = `
-      <div class="health" id="heart_3" style="left: 275px; top: 175px; position: absolute"> <img src="https://vignette.wikia.nocookie.net/unturned-bunker/images/0/0f/Medkit.png/revision/latest?cb=20160523170332" width="75px" height="50px"> </div>
-    `
+      <div class="health" id="heart_3" style="left: 275px;"> <img src="./assets/Medkit.png" width="75px" height="50px"> </div>
+    `;
 
     heartsContainer.innerHTML = first_heart + sec_heart + third_heart
   }

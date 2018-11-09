@@ -21,7 +21,7 @@ function createBeehive() {
   const gameContainer = document.getElementById('container')
 
   if (gameContainer !== null) {
-    const beehiveHTML = `<div id="beehive_${counterB}" style="left: ${randomNumber}px; top: 175px; position: absolute"> <img src="https://png.icons8.com/cotton/2x/hornet-hive.png" width="80px" height="80px"> </div>`
+    const beehiveHTML = `<div id="beehive_${counterB}" style="left: ${randomNumber}px; top: 175px; position: absolute"> <img src="./assets/hornet-hive.png" width="80px" height="80px"> </div>`
     gameContainer.innerHTML += beehiveHTML
   }
 }
@@ -80,9 +80,13 @@ function touchedBasket(elem, id) {
         }).then(scoresIndex).then(leaderBoardHTML)
 
         const endGameHTML = `
-              <div style="left: 250px; top: 150px; position: absolute; text-align: center;" width="500" height="600">
-              <h1 style="color: white;">Game Over!<h1> <h2 style="color: white;">Final Score: ${user.score}</h2> <button id="play-again" onclick="playAgain()" data-action="play-again">Play Again!</button><br> <img src="assets/buzz3.png" height="350px" width="500px">
-              </div>`
+              <div style="left: 250px; top: 155px; position: absolute; text-align: center;" width="500" height="600">
+                <h1 style="color: white;">Game Over!<h1> 
+                <h2 style="color: white;">Final Score: ${user.score}</h2> 
+                <button id="play-again" class="btn btn-success" onclick="playAgain()" data-action="play-again">Play Again!</button>
+                <br> 
+                <img src="./assets/buzz3.png" height="350px" width="500px">
+              </div>`;
         document.getElementById('game-board').innerHTML = endGameHTML
       }
     }
@@ -99,7 +103,3 @@ function playAgain(){
     }
   });
 }
-
-
-// https://png2.kisspng.com/sh/28a67e0f05cc975b39dde26273bc2e0a/L0KzQYi4UsA5N5VpSZGAYULkdbeAVvRiPpVrUZC5M0S4RIi7VME2OWM8TqU7NUS7SYWATwBvbz==/5a2aef76da6df9.0345474415127632548947.png
-// http://www.eversweetapiaries.com/images1/stock%20photos/buzz3.png
